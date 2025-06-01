@@ -1,6 +1,7 @@
 @use '../helpers' as *;
 
 .rating-view {
+	content: '';
 	display: inline-flex;
 	column-gap: rem(7);
 	padding: rem(10) rem(16);
@@ -18,9 +19,11 @@
 		--size: #{rem(24)};
 
 		@include square(var(--size));
+		content: '';
 		background: url('../../icons/star_gray.svg') center/contain no-repeat;
 
 		&.is-active {
+			content: '';
 			background-image: url('../../icons/star_yellow.svg');
 		}
 
